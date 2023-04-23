@@ -1,0 +1,87 @@
+@font-face {
+    font-family:DancingScript ;
+    src: url('fonts/DancingScript-Medium.ttf');
+}
+
+.wrapper {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows:
+    repeat(6, auto) ;
+}
+
+.header {
+    grid-column: span 12;
+    place-self: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+h1,h2{
+    font-size: 3rem;
+    color: rgb(208, 179, 16);
+    font-family:DancingScript ;
+}
+img{
+   height: 200px;
+   width: 200px;
+   border-radius: 50%;
+   justify-content: center;
+}
+.menu {
+    margin-top: 10px;
+    background-color: #fff;
+    grid-column: span 12;
+    place-self: center;
+    width: 400px;
+    font-size: 1.3rem;
+}
+.main{
+    grid-column: span 12;
+    place-self: center;
+}
+.content{
+    background-color: #fff;
+    grid-column: span 12;
+    place-self: center;
+
+}
+.content-title{
+   justify-content: center;
+   font-family:DancingScript ;
+   font-size: 3rem;
+}
+.footer {
+    justify-content: space-around;
+     place-self: center;
+     grid-column: span 12;
+     font-family:DancingScript ;
+     font-size: 1.6em;
+}
+.footer i{
+    padding: 20px;
+}
+.footer a{
+    text-decoration: none;
+    color: #000;
+}
+@media screen and (max-width: 480px) {
+    .header {
+        grid-column: span 12;
+    }
+    
+    .menu {
+        grid-column: span 12;
+        width: 250px;
+        font-size: 12px;
+    }
+    .main{
+        grid-column: span 12;
+    }
+    .content {
+        grid-column: span 12;
+    }
+    .footer{
+       
+        grid-column: span 12;
+    }
+}
